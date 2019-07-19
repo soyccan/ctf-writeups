@@ -1,0 +1,3 @@
+break /home/soyccan/hackme.inndy/pwn-easy.c:59
+break /home/soyccan/hackme.inndy/pwn-easy.c:58
+
