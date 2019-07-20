@@ -1,0 +1,15 @@
+set environment LD_PRELOAD=./hook
+b *0x08048EFD
+b *0x08048C4F
+b *0x08048CAC
+b *0x08048EC1
+r > flag
+set $eip=callme1
+c
+set $eip=0x08048C56
+c
+set $eip=callme2
+c
+set $eip=callme3
+c
+q

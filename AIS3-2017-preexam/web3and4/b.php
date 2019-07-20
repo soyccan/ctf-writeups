@@ -1,0 +1,3 @@
+<?
+echo file_get_contents(
+	"the_flag2_which_the_filename_you_can_not_guess_without_getting_the_shellllllll1l");

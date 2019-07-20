@@ -1,0 +1,1 @@
+Appjailuncher.exe /port:56746 /key:flag.txt /timeout:30000000 pwn2.exe

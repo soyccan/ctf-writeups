@@ -1,0 +1,5 @@
+Trying 140.113.213.214...
+Connected to quiz.ais3.org.
+Escape character is '^]'.
+======== AIS3 Login sytem ========
+ Username : 
