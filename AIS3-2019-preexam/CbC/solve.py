@@ -1,5 +1,4 @@
-# https://maojui.me/Writeups/AIS3/2019/CbC/
-#!/usr/bin/env python3.7
+
 import os
 
 BLOCK_SIZE = 256
@@ -36,7 +35,12 @@ def bitchain(cb, state=0):
     return [b0 ^ b] + bitchain(bn, state=ns[b0])
 
 def blockcipher(b):
-    return B2n(bitchain(n2B(b)))
+    # 0b010101... (256 bits)
+    MASK = 0x5555555555555555555555555555555555555555555555555555555555555555
+
+    r = B2n(bitchain(n2B(b)))
+    assert r == b ^ MASK
+    return r
 
 class CbC:
 
@@ -54,7 +58,7 @@ class CbC:
             b = swap(b)
         return b
 
-if __name__ == "__main__":
+def run():
     flag = bytes.hex(os.urandom(BLOCK_SIZE // 8))
     key = int(flag, 16)
     C = CbC(key, 99)
@@ -63,4 +67,14 @@ if __name__ == "__main__":
         for i in range(100):
             pt = int(bytes.hex(os.urandom(BLOCK_SIZE // 8)), 16)
             ct = C.encrypt(pt)
+            assert ct == swap(pt ^ key)
+            assert key == swap(ct) ^ pt
             f.write(str((pt, ct)) + "\n")
+
+def solve():
+    for line in open('data'):
+        pt, ct = map(int,line.lstrip('(').rstrip(')\n').split(','))
+        key = swap(ct) ^ pt
+        print(key.to_bytes(32, 'little').hex())
+
+solve()
