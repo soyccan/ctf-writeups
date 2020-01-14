@@ -1,0 +1,31 @@
+9b                      fwait
+98                      cwde
+96                      xchg   esi,eax
+94                      xchg   esp,eax
+92                      xchg   edx,eax
+a4                      movs   BYTE PTR es:[edi],BYTE PTR ds:[esi]
+e3 82                   jecxz  0xffffff84
+ae                      scas   al,BYTE PTR es:[edi]
+9f                      lahf
+aa                      stos   BYTE PTR es:[edi],al
+90                      nop
+a7                      cmps   DWORD PTR ds:[esi],DWORD PTR es:[edi]
+91                      xchg   ecx,eax
+a5                      movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
+9c                      pushf
+ab                      stos   DWORD PTR es:[edi],eax
+95                      xchg   ebp,eax
+e3 81                   jecxz  0xffffff83
+e3 86                   jecxz  0xffffff88
+93                      xchg   ebx,eax
+ef                      out    dx,eax
+e3 87                   jecxz  0xffffff89
+97                      xchg   edi,eax
+9d                      popf
+ac                      lods   al,BYTE PTR ds:[esi]
+ad                      lods   eax,DWORD PTR ds:[esi]
+e3 83                   jecxz  0xffffff85
+af                      scas   eax,DWORD PTR es:[edi]
+99                      cdq
+a6                      cmps   BYTE PTR ds:[esi],BYTE PTR es:[edi]
+9e                      sahf

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator>
+        <link href="/feed.xml" rel="self" type="application/atom+xml" />
+        <link href="/" rel="alternate" type="text/html" />
+        <updated>2019-12-19T13:43:19+08:00</updated>
+        <id>/feed.xml</id>
+        <title type="html">Marry Xmas and Happy New Year</title>
+        <subtitle>You'll get better next year. Keep going!</subtitle>
+        <entry>
+            <title type="html">My garbage final project</title>
+            <link href="/hope/2019/12/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="My garbage final project" />
+            <published>2019-12-19T12:59:03+08:00</published>
+            <updated>2019-12-19T12:59:03+08:00</updated>
+            <id>/hope/2019/12/19/welcome-to-jekyll</id>
+            <content type="html" xml:base="/hope/2019/12/19/welcome-to-jekyll.html">&lt;p&gt;This is my garbage final project.&lt;/p&gt; &lt;p&gt;Everyone make mistakes. The most important thing is to face the problem and deal with it. Stop shirking and you will be better next year.&lt;/p&gt; &lt;p&gt;Merry Xmas and happy new year!&lt;/p&gt;</content>
+            <author>
+                <name></name>
+            </author>
+            <summary type="html">This is my garbage final project.</summary>
+        </entry>
+    </feed>

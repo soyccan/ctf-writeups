@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balsn CTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/themes/core/static/img/favicon.ico"
+		  type="image/x-icon">
+	<link rel="stylesheet" href="/themes/core/static/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="/themes/core/static/css/vendor/font-awesome/fontawesome-fonts.css" type='text/css'>
+	<link rel="stylesheet" href="/themes/core/static/css/vendor/font-awesome/fontawesome-all.min.css" type='text/css'>
+	<link rel="stylesheet" href="/themes/core/static/css/vendor/font.css"  type='text/css'>
+	<link rel="stylesheet" href="/themes/core/static/css/jumbotron.css">
+	<link rel="stylesheet" href="/themes/core/static/css/sticky-footer.css">
+	<link rel="stylesheet" href="/themes/core/static/css/base.css">
+	
+	<link rel="stylesheet" href="/themes/core/static/css/challenge-board.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="/static/user.css">
+	<script src="/themes/core/static/js/vendor/promise-polyfill.min.js"></script>
+	<script src="/themes/core/static/js/vendor/fetch.min.js"></script>
+	<script src="/themes/core/static/js/CTFd.js"></script>
+	<script src="/themes/core/static/js/vendor/moment.min.js"></script>
+	<script src="/themes/core/static/js/vendor/nunjucks.min.js"></script>
+    <script src="/themes/core/static/js/vendor/konami.min.js"></script>
+	<script type="text/javascript">
+		var script_root = "";
+		var csrf_nonce = "8992fb50abbdee88013e93fa6ef0938a5992e55b61eb156dda3097900ad39f70";
+		var user_mode = "users";
+		var ctf_start = 1570240800;
+		var ctf_end = 1570413600;
+		CTFd.options.urlRoot = script_root;
+		CTFd.options.csrfNonce = csrf_nonce;
+		CTFd.options.start = ctf_start;
+		CTFd.options.end = ctf_end;
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+				
+				Balsn CTF
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+					aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/rules">/rules</a>
+							</li>
+						
+					
+
+					<li class="nav-item">
+						<a class="nav-link" href="/notifications">/notifications</a>
+					</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/users">/users</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/scoreboard">/scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">/challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/user">/profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/settings">/settings</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/logout">/logout</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>[challenges]</h1>
+	</div>
+</div>
+
+
+	<div class="container">
+		<div id='errors' class="row">
+			<div class="col-md-12">
+				
+					<h1 class="text-center">Balsn CTF has ended</h1>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<div class="container">
+	<div id='challenges-board'>
+		<div class="text-center">
+			<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+		</div>
+	</div>
+</div>
+
+<input id="nonce" type="hidden" name="nonce" value="8992fb50abbdee88013e93fa6ef0938a5992e55b61eb156dda3097900ad39f70">
+
+<div class="modal fade" id="challenge-window" tabindex="-1" role="dialog">
+</div>
+
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+            <small class="text-muted" style="color:black !important">Powered by CTFd</small>
+		</div>
+	</footer>
+
+	<script src="/themes/core/static/js/vendor/jquery.min.js"></script>
+	<script src="/themes/core/static/js/vendor/markdown-it.min.js"></script>
+	<script src="/themes/core/static/js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="/themes/core/static/js/vendor/howler.min.js"></script>
+	<script src="/themes/core/static/js/vendor/window-controller.js"></script>
+	<script src="/themes/core/static/js/vendor/countdown.min.js"></script>
+	<script src="/themes/core/static/js/style.js"></script>
+	<script src="/themes/core/static/js/utils.js"></script>
+	<script src="/themes/core/static/js/ezq.js"></script>
+	<script src="/themes/core/static/js/countdown.js"></script>
+	
+	<script>
+		var authed = true;
+	</script>
+	<script src="/themes/core/static/js/utils.js"></script>
+	<script src="/themes/core/static/js/multi-modal.js"></script>
+	
+	<script src="/themes/core/static/js/challenges.js"></script>
+	<script src="/themes/core/static/js/hints.js"></script>
+	
+	<script src="/themes/core/static/js/style.js"></script>
+
+
+    <script>
+    $(document).on('keyup', Konami.code(function() {
+        document.body.style.setProperty("-webkit-transform", "rotate(-180deg)", null);
+    }));
+    </script>
+
+	
+</body>
+</html>

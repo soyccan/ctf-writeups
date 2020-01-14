@@ -1,0 +1,63 @@
+    <html>
+    <head>
+        <title>Super Reverser</title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
+    </head>
+    <body style="padding: 70px">
+        <h1>Super Reverser</h1>
+        <form id="revForm">
+            <label for="revForm">Input a string that you want to reverse: &nbsp;</label>
+            <input id="names" name="name" value="" class="form-control" placeholder="you,can,input,many,strings,..."><br>
+            <input type="submit" value="Go!" class="btn btn-primary"><br>
+        </form>
+        <br>
+        <hr>
+        <div id="result">
+        </div>
+    <script>
+            var form = document.getElementById("revForm");
+
+            function updateRevs(names, revs) {
+                var div = document.getElementById("result");
+                div.innerHTML = "";
+                for (var i = 0; i < revs.length; i++) {
+                    div.innerHTML += "<div class='alert alert-dismissible alert-info'>" + revs[i] + "</div>";
+                }
+            };
+            
+            function showError() {
+                var div = document.getElementById("result");
+                div.innerHTML = "<h3>Something went wrong...</h3>"
+            };
+
+            function getRevs() {
+                var names = document.getElementById("names").value.split(",");
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/connect", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                xhr.onreadystatechange = function() {
+                    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                        var response = this.responseText;
+                        if (response) {
+                            var revs = JSON.parse(response);
+                            updateRevs(names, revs);
+                        }
+                    } else {
+                        showError();
+                    }
+                }
+                xhr.send(JSON.stringify({"names": names}));
+            };
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                getRevs();
+            });
+    </script>
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
