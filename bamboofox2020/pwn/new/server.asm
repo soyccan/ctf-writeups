@@ -108,7 +108,7 @@ client_start:
     je client_start ; keep reading if not EOF
 
     call log_disconnect
-    
+
     ; close socket fd
     mov rdi, [sockfd]
     call close_fd

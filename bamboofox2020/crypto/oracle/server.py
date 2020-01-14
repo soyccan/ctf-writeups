@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#  nc 34.82.101.212 20001
 from Crypto.Util.number import *
 
 with open('flag', 'rb') as f:

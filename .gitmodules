@@ -10,3 +10,9 @@
 [submodule "ais3eof2020/web/king_of_php/phpggc"]
 	path = ais3eof2020/web/king_of_php/phpggc
 	url = https://github.com/ambionics/phpggc
+[submodule "bamboofox2020/misc/i_cant_see_you/john"]
+	path = bamboofox2020/misc/i_cant_see_you/john
+	url = https://gitlab.com/kalilinux/packages/john.git
+[submodule "bamboofox2020/misc/i_cant_see_you/wordlists"]
+	path = bamboofox2020/misc/i_cant_see_you/wordlists
+	url = https://gitlab.com/kalilinux/packages/wordlists.git
