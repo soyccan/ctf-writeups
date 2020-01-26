@@ -16,3 +16,9 @@
 [submodule "bamboofox2020/misc/i_cant_see_you/wordlists"]
 	path = bamboofox2020/misc/i_cant_see_you/wordlists
 	url = https://gitlab.com/kalilinux/packages/wordlists.git
+[submodule "eductf2019/week11_lab/ROPgadget"]
+	path = eductf2019/week11_lab/ROPgadget
+	url = https://github.com/JonathanSalwan/ROPgadget
+[submodule "eductf2019/week11_lab/Ropper"]
+	path = eductf2019/week11_lab/Ropper
+	url = https://github.com/sashs/Ropper
