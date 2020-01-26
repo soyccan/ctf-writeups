@@ -1,0 +1,4 @@
+break sigaction
+break __pthread_start
+break JNI_OnLoad
+
