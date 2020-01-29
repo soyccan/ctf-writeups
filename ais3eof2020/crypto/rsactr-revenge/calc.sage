@@ -1,9 +1,7 @@
 import sys
+sys.setrecursionlimit(10000)
 
 def gcd(f1, f2):
-    print('f1',f1)
-    print('f2',f2)
-    print()
     return f1.monic() if f2 == 0 else gcd(f2, f1 % f2)
 
 c1 = bytes.fromhex(sys.argv[1])
@@ -11,6 +9,8 @@ c2 = bytes.fromhex(sys.argv[2])
 c3 = bytes.fromhex(sys.argv[3])
 e = int(sys.argv[4])
 n = int(sys.argv[5])
+
+print(f'e={e} c1={c1.hex()}')
 
 P.<x> = PolynomialRing(Zmod(n))
 
@@ -23,8 +23,8 @@ for i in range(0, len(c1), 128):
     f1 = (cc1 - x)^e - (cc2 - x)^e + 2020 * (len(c1) // 128)
     f2 = (cc2 - x)^e - (cc3 - x)^e + 2020 * (len(c1) // 128)
 
-    xx = -gcd(f1, f2).monic().coefficients[0]
-    flag += int(xx).to_bytes(16, 'little')
+    xx = -gcd(f1, f2).coefficients()[0]
+    flag += int(xx).to_bytes(16, 'big')
 print(flag)
 
 #
