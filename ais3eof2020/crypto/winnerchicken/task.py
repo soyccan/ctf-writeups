@@ -11,7 +11,7 @@ def step():
     if out:
         state ^= poly
     return out
-    
+
 
 def random():
     for _ in range(42):
