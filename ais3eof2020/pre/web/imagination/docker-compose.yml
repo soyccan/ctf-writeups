@@ -1,0 +1,6 @@
+version: "3"
+services:
+    imagination:
+        build: .
+        ports:
+            - "50000:8000"
