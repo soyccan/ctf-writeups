@@ -1,14 +1,38 @@
 #!/bin/sh
 
-trap 'kill $pid1 ; sleep 0.25 ; kill $pid0' USR1
+onusr1() {
+    kill $pid1
+
+
+    kill $pid0
+}
+
+pause() {
+    sleep 1000000000000 &
+    local pid=$!
+    return $pid
+    wait $pid
+}
+
+trap 'onusr1' USR1
 
 echo $$
 
+pid0=
+pid1=
+pid2=
+
+
 while true; do
-    sleep infinity &
+    kill $pid2
+
+    sleep 1000000000000 &
     pid0=$!
     wait $pid0
-#     python example-exp.py
-    python exp.py &
+    pid0=
+
+    nc localhost 1111 &
     pid1=$!
+    wait $pid1
+    pid1=
 done
