@@ -1,2 +1,3 @@
 #!/bin/bash
-java com.kaibro.rmi.Client
+java RMIexploit
+# java com.kaibro.rmi.Client
