@@ -1,5 +1,6 @@
+break main
 break *(new+0x95)
 break *(Remove+0x63)
-break *(show+0x3f)
+break *(show+0x84)
 break *take_flag
 

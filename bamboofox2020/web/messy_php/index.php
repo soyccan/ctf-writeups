@@ -10,7 +10,8 @@ include_once('flag.php');
 # TODO: Replace emoji to normal variable name
 # TODO: Eat something
 # TODO: Quit the job, maintain this is toooooo hard
-show_source(__FILE__);
+// show_source(__FILE__);
+$fllllllag = 'BAMBOOFOX{foobar}'; // TODO
 echo strlen($fllllllag) . "\n";
 if ((isset($_POST['😂']) and isset($_POST['🤣']) and isset($_GET['KEY'])) or isset($_GET['is_this_flag？'])){
     srand(20191231 + 20200101 + time());
@@ -38,7 +39,9 @@ if ((isset($_POST['😂']) and isset($_POST['🤣']) and isset($_GET['KEY'])) or
     # Bob: prove it to me?
     # Ann: don't chat in here, plz
     # Bob: fine
-        $final .= @strval(ord($value) ^ rand() ^ $array2[rand() % count($array2)] ^ ($array3[rand() % count($array3)] * random_int(1,128))) . ' ';
+        $final .= @strval(ord($value) ^ rand()
+            ^ $array2[rand() % count($array2)]
+            ^ ($array3[rand() % count($array3)] * random_int(1,128))) . ' ';
     }
     if ($_POST['​😂'] == md5($_POST['🤣​'])){
         # Remove this to gain some money for your job
@@ -59,4 +62,5 @@ if ((isset($_POST['😂']) and isset($_POST['🤣']) and isset($_GET['KEY'])) or
     # Decided to quit your job?
     die('bye!');
 }
+?>
 35 bye!

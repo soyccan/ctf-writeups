@@ -4,7 +4,7 @@ RUN dpkg --add-architecture i386
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install xinetd -y
-RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 libseccomp2:i386 python -y
+RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 libseccomp2:i386 python gdbserver socat gdb -y
 RUN useradd -m EasyROP
 COPY ./share /home/EasyROP
 COPY ./xinetd /etc/xinetd.d/EasyROP
