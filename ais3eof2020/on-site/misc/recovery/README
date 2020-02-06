@@ -1,0 +1,6 @@
+original file is 'diskimage'
+but due to GitHub size limit,
+it's cut into pieces by:
+`split -b 50m -a 1 diskimage diskimage_`
+to restore it, use:
+`cat diskimage_* > diskimage`
