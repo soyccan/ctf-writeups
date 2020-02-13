@@ -1,0 +1,4 @@
+> /Users/soyccan/Documents/hacknote/ais3eof2020/on-site/rev/vault/wasm_tool.py(602)<module>()
+-> for f in w.functions.values():
+(Pdb) --KeyboardInterrupt--
+(Pdb) 
