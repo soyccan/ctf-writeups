@@ -6,6 +6,8 @@
 
 #include "vault.h"
 
+char* global_arg1;
+
 int main(int argc, char** argv) {
   /* Make sure there is at least one command-line argument. */
   // if (argc < 2) return 1;
@@ -16,6 +18,7 @@ int main(int argc, char** argv) {
 
   /* Initialize the fac module. Since we didn't define WASM_RT_MODULE_PREFIX,
   the initialization function is called `init`. */
+  global_arg1 = argv[1];
   init();
 
   /* Call `fac`, using the mangled name. */
@@ -24,7 +27,7 @@ int main(int argc, char** argv) {
   /* Print the result. */
   // printf("fac(%u) -> %u\n", x, result);
 
-  Z_eZ_ii(argv[1]);
+  Z_eZ_ii(0x3000);
 
   return 0;
 }

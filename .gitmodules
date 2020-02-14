@@ -22,3 +22,6 @@
 [submodule "eductf2019/week11_lab/Ropper"]
 	path = eductf2019/week11_lab/Ropper
 	url = https://github.com/sashs/Ropper
+[submodule "ais3eof2020/on-site/rev/vault/wabt"]
+	path = ais3eof2020/on-site/rev/vault/wabt
+	url = https://github.com/WebAssembly/wabt

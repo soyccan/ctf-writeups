@@ -53,6 +53,10 @@ extern u32 (*WASM_RT_ADD_PREFIX(Z_gZ_iv))(void);
 extern u32 (*WASM_RT_ADD_PREFIX(Z_hZ_ii))(u32);
 /* export: 'i' */
 extern void (*WASM_RT_ADD_PREFIX(Z_iZ_vi))(u32);
+
+// my import
+extern char* global_arg1;
+
 #ifdef __cplusplus
 }
 #endif
