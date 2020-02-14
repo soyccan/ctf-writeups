@@ -19,10 +19,12 @@ int main(int argc, char** argv) {
   init();
 
   /* Call `fac`, using the mangled name. */
-  u32 result = Z_dZ_iii(argc, argc);
+  // u32 result = Z_dZ_iii(argc, argc);
 
   /* Print the result. */
   // printf("fac(%u) -> %u\n", x, result);
+
+  Z_eZ_ii(argv[1]);
 
   return 0;
 }

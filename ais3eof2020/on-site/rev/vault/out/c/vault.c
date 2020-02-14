@@ -179,10 +179,10 @@ static u32 f12(u32);
 static u32 f13(u32, u32, u32);
 static void f14(u32);
 static u32 f15(u32, u32, u32);
-static void stackRestore(u32);
-static u32 stackAlloc(u32);
-static u32 stackSave(void);
-static u32 _v(u32);
+static void f16_stackRestore(u32);
+static u32 f17_stackAlloc(u32);
+static u32 f18_stackSave(void);
+static u32 f19_v(u32);
 static void f20(u32, u32, u32);
 static u32 f21(u32, u32);
 static u32 f22(u32, u32);
@@ -197,21 +197,22 @@ static u32 f30(u32);
 static u32 f31_main(u32, u32);
 static void ___wasm_call_ctors(void);
 
-static u32 g0;
+static u32 g0_stack;
 
 static void init_globals(void) {
-  g0 = 5246656u;
+  g0_stack = 0x3000;
+  // g0 = 5246656u;
 }
 
 static void f2(u32 p0, u32 p1, u32 p2, u32 p3, u32 p4) {
   u32 l5 = 0;
   FUNC_PROLOGUE;
   u32 i0, i1, i2, i3, i4, i5;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 256u;
   i0 -= i1;
   l5 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = p2;
   i1 = p3;
   i0 = (u32)((s32)i0 <= (s32)i1);
@@ -264,7 +265,7 @@ static void f2(u32 p0, u32 p1, u32 p2, u32 p3, u32 p4) {
   i0 = l5;
   i1 = 256u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   FUNC_EPILOGUE;
 }
 
@@ -391,11 +392,11 @@ static u32 f5(u32 p0, u32 p1, u32 p2, u32 p3) {
   u32 i0, i1, i2, i3, i4, i5, i6;
   u64 j0, j1, j2;
   f64 d1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 80u;
   i0 -= i1;
   l5 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l5;
   i1 = 1230u;
   i32_store(Z_envZ_memory, (u64)(i0 + 76), i1);
@@ -1524,7 +1525,7 @@ static u32 f5(u32 p0, u32 p1, u32 p2, u32 p3) {
   i0 = l5;
   i1 = 80u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l12;
   FUNC_EPILOGUE;
   return i0;
@@ -2152,11 +2153,11 @@ static u32 f13(u32 p0, u32 p1, u32 p2) {
   FUNC_PROLOGUE;
   u32 i0, i1, i2, i3, i4, i5, i6;
   u64 j1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 32u;
   i0 -= i1;
   l3 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l3;
   i1 = p0;
   i1 = i32_load(Z_envZ_memory, (u64)(i1 + 28));
@@ -2269,7 +2270,7 @@ static u32 f13(u32 p0, u32 p1, u32 p2) {
     i0 = l3;
     i1 = 32u;
     i0 += i1;
-    g0 = i0;
+    g0_stack = i0;
     i0 = p0;
     goto Bfunc;
     B1:;
@@ -2321,11 +2322,11 @@ static void f14(u32 p0) {
   u32 l1 = 0, l2 = 0, l3 = 0;
   FUNC_PROLOGUE;
   u32 i0, i1, i2, i3;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 16u;
   i0 -= i1;
   l1 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l1;
   i1 = 10u;
   i32_store8(Z_envZ_memory, (u64)(i0 + 15), i1);
@@ -2380,7 +2381,7 @@ static void f14(u32 p0) {
   i0 = l1;
   i1 = 16u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   FUNC_EPILOGUE;
 }
 
@@ -2417,47 +2418,47 @@ static u32 f15(u32 p0_str, u32 p1_len, u32 p2_buf) {
   return i0;
 }
 
-static void stackRestore(u32 p0) {
+static void f16_stackRestore(u32 p0) {
   FUNC_PROLOGUE;
   u32 i0;
   i0 = p0;
-  g0 = i0;
+  g0_stack = i0;
   FUNC_EPILOGUE;
 }
 
-static u32 stackAlloc(u32 p0) {
+static u32 f17_stackAlloc(u32 p0) {
   FUNC_PROLOGUE;
   u32 i0, i1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = p0;
   i0 -= i1;
   i1 = 4294967280u;
   i0 &= i1;
   p0 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = p0;
   FUNC_EPILOGUE;
   return i0;
 }
 
-static u32 stackSave(void) {
+static u32 f18_stackSave(void) {
   FUNC_PROLOGUE;
   u32 i0;
-  i0 = g0;
+  i0 = g0_stack;
   FUNC_EPILOGUE;
   return i0;
 }
 
-static u32 _v(u32 p0) {
+static u32 f19_v(u32 p0) {
   u32 l1 = 0;
   FUNC_PROLOGUE;
   u32 i0, i1, i2;
   u64 j1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 48u;
   i0 -= i1;
   l1 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l1;
   i1 = 1222u;
   j1 = i64_load(Z_envZ_memory, (u64)(i1));
@@ -2672,7 +2673,7 @@ static u32 _v(u32 p0) {
   i0 = l1;
   i1 = 48u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   i0 = 1247u;
   FUNC_EPILOGUE;
   return i0;
@@ -3200,11 +3201,11 @@ static void f23(u32 p0) {
   u32 l1 = 0;
   FUNC_PROLOGUE;
   u32 i0, i1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 16u;
   i0 -= i1;
   l1 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l1;
   i1 = p0;
   i32_store(Z_envZ_memory, (u64)(i0 + 12), i1);
@@ -3215,7 +3216,7 @@ static void f23(u32 p0) {
   i0 = l1;
   i1 = 16u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   FUNC_EPILOGUE;
 }
 
@@ -3298,11 +3299,11 @@ static u32 f25_e_k_check_passwd(u32 p0_passwd) {
   FUNC_PROLOGUE;
   u32 i0, i1;
   u64 j1;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 48u;
   i0 -= i1;
   l2 = i0;
-  g0 = i0;
+  g0_stack = i0;
   // g0 -= 48
   i0 = l2;
   i1 = 0u;
@@ -4171,7 +4172,7 @@ static u32 f25_e_k_check_passwd(u32 p0_passwd) {
   i0 = l2;
   i1 = 48u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l3;
   FUNC_EPILOGUE;
   return i0;
@@ -4250,11 +4251,11 @@ static void f28(u32 p0, u32 p1) {
   u32 l2 = 0, l3 = 0, l4 = 0;
   FUNC_PROLOGUE;
   u32 i0, i1, i2, i3, i4;
-  i0 = g0;
+  i0 = g0_stack;
   i1 = 208u;
   i0 -= i1;
   l2 = i0;
-  g0 = i0;
+  g0_stack = i0;
   i0 = l2;
   i1 = p1;
   i32_store(Z_envZ_memory, (u64)(i0 + 204), i1);
@@ -4398,7 +4399,7 @@ static void f28(u32 p0, u32 p1) {
   i0 = l2;
   i1 = 208u;
   i0 += i1;
-  g0 = i0;
+  g0_stack = i0;
   FUNC_EPILOGUE;
 }
 
@@ -4563,6 +4564,8 @@ static const u8 data_segment_data_22[] = {
 };
 
 static void init_memory(void) {
+  Z_envZ_memory = malloc(sizeof(wasm_rt_memory_t));
+  wasm_rt_allocate_memory(Z_envZ_memory, 4, 4);
   memcpy(&((*Z_envZ_memory).data[1024u]), data_segment_data_0, 164);
   memcpy(&((*Z_envZ_memory).data[1200u]), data_segment_data_1, 80);
   memcpy(&((*Z_envZ_memory).data[1296u]), data_segment_data_2, 24);
@@ -4589,6 +4592,8 @@ static void init_memory(void) {
 }
 
 static void init_table(void) {
+  Z_envZ_table = malloc(sizeof(wasm_rt_table_t));
+  wasm_rt_allocate_table(Z_envZ_table, 4, 4);
   uint32_t offset;
   offset = 1u;
   (*Z_envZ_table).data[offset + 0] = (wasm_rt_elem_t){func_types[1], (wasm_rt_anyfunc_t)(&f30)};
@@ -4619,13 +4624,13 @@ static void init_exports(void) {
   /* export: 'e' */
   WASM_RT_ADD_PREFIX(Z_eZ_ii) = (&f25_e_k_check_passwd);
   /* export: 'f' */
-  WASM_RT_ADD_PREFIX(Z_fZ_ii) = (&_v);
+  WASM_RT_ADD_PREFIX(Z_fZ_ii) = (&f19_v);
   /* export: 'g' */
-  WASM_RT_ADD_PREFIX(Z_gZ_iv) = (&stackSave);
+  WASM_RT_ADD_PREFIX(Z_gZ_iv) = (&f18_stackSave);
   /* export: 'h' */
-  WASM_RT_ADD_PREFIX(Z_hZ_ii) = (&stackAlloc);
+  WASM_RT_ADD_PREFIX(Z_hZ_ii) = (&f17_stackAlloc);
   /* export: 'i' */
-  WASM_RT_ADD_PREFIX(Z_iZ_vi) = (&stackRestore);
+  WASM_RT_ADD_PREFIX(Z_iZ_vi) = (&f16_stackRestore);
 }
 
 void WASM_RT_ADD_PREFIX(init)(void) {
