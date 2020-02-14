@@ -200,8 +200,8 @@ static void ___wasm_call_ctors(void);
 static u32 g0_stack;
 
 static void init_globals(void) {
-  g0_stack = 0x3000;
-  // g0 = 5246656u;
+  g0_stack = 0x2ec0;
+  // g0 = 5246656u; // 0x500ec0
 }
 
 static void f2(u32 p0, u32 p1, u32 p2, u32 p3, u32 p4) {
@@ -1877,6 +1877,7 @@ static u32 f9_maybe_strlen(u32 p0) {
     i0 = l1;
     i0 = i32_load8_u(Z_envZ_memory, (u64)(i0));
     if (i0) {goto L3;}
+    // while *p0 && (p0 & 3): p0++
   goto B0;
   B1:;
   L4: 
