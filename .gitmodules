@@ -25,3 +25,9 @@
 [submodule "ais3eof2020/on-site/rev/vault/wabt"]
 	path = ais3eof2020/on-site/rev/vault/wabt
 	url = https://github.com/WebAssembly/wabt
+[submodule "ais3eof2020/on-site/rev/vault/WebAssembly"]
+	path = ais3eof2020/on-site/rev/vault/WebAssembly
+	url = https://github.com/sophoslabs/WebAssembly
+[submodule "ais3eof2020/on-site/rev/vault/idawasm"]
+	path = ais3eof2020/on-site/rev/vault/idawasm
+	url = https://github.com/fireeye/idawasm
