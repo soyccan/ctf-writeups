@@ -7,7 +7,7 @@ import subprocess
 import resource
 
 resource.setrlimit(resource.RLIMIT_FSIZE, (65536, 65536))
-#  os.chdir(os.environ['HOME'])
+os.chdir(os.environ['HOME'])
 
 size = int(sys.stdin.readline().rstrip('\r\n'))
 if size > 65536:
@@ -20,17 +20,14 @@ with tempfile.NamedTemporaryFile(mode='w+', suffix='.tar', delete=True, dir='.')
         tarf.write(data)
         tarf.flush()
         try:
-            subprocess.check_output(
-                ['/bin/tar', '-xf', tarf.name, '-C', outdir])
-            sys.stdin.read(1)
+            subprocess.check_output(['/bin/tar', '-xf', tarf.name, '-C', outdir])
         except:
             print('Broken tar file.')
             raise
 
         try:
             a = subprocess.check_output(['/usr/bin/sha1sum', 'flag.txt'])
-            b = subprocess.check_output(
-                ['/usr/bin/sha1sum', os.path.join(outdir, 'guess.txt')])
+            b = subprocess.check_output(['/usr/bin/sha1sum', os.path.join(outdir, 'guess.txt')])
             a = a.split(b' ')[0]
             b = b.split(b' ')[0]
             assert len(a) == 40 and len(b) == 40
