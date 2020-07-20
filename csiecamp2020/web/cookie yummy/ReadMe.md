@@ -1,0 +1,3 @@
+Name: cookie yummy
+Value: 0
+Description: 唉，我朋友明明知道我不喜歡吃[餅乾](https://www.csie.ntu.edu.tw/~b06902097/ctf/cookie/)還送餅乾給我，真是不體貼呢...

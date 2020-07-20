@@ -1,0 +1,6 @@
+Name: the castle
+Value: 0
+Description: 等我...我一定...一定會拯救妳...
+如果可以...回到過去...
+
+[城堡](https://www.csie.ntu.edu.tw/~b06902097/ctf/the_castle/)

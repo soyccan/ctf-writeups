@@ -1,0 +1,3 @@
+Name: strange file 2
+Value: 0
+Description: 我朋友又傳了一個 FLAG 檔案給我，但我怎麼樣都打不開...

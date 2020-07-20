@@ -1,0 +1,3 @@
+Name: Not a Chinese cipher?
+Value: 0
+Description: 主辦人偷偷把這題答案的提示用訊息傳給我了，但我怎麼看不懂他在寫什麼...
