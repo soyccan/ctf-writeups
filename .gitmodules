@@ -31,3 +31,6 @@
 [submodule "ais3eof2020/on-site/rev/vault/idawasm"]
 	path = ais3eof2020/on-site/rev/vault/idawasm
 	url = https://github.com/fireeye/idawasm
+[submodule "CTFDump"]
+	path = CTFDump
+	url = https://github.com/realgam3/CTFDump
