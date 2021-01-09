@@ -33,4 +33,4 @@
 	url = https://github.com/fireeye/idawasm
 [submodule "tools/CTFDump"]
 	path = tools/CTFDump
-	url = https://github.com/realgam3/CTFDump
+	url = https://github.com/soyccan/CTFDump
