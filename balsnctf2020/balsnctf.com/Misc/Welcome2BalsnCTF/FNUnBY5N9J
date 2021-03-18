@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport" />
+<meta name="description" content="Check out the balsnctf community on Discord - hang out with 1,251 other members and enjoy free voice and text chat." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@discord" />
+<meta name="twitter:title" content="Join the balsnctf Discord Server!" />
+<meta name="twitter:description" content="Check out the balsnctf community on Discord - hang out with 1,251 other members and enjoy free voice and text chat." />
+<meta property="og:title" content="Join the balsnctf Discord Server!" />
+<meta property="og:url" content="https://discord.com/invite/FNUnBY5N9J" />
+<meta property="og:description" content="Check out the balsnctf community on Discord - hang out with 1,251 other members and enjoy free voice and text chat." />
+<meta property="og:site_name" content="Discord" />
+<meta property="og:image" content="https://cdn.discordapp.com/icons/618345806013005824/9c06147b9298e4f11a92af0803daf84a.jpg?size=256" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta name="twitter:image" content="https://cdn.discordapp.com/icons/618345806013005824/9c06147b9298e4f11a92af0803daf84a.jpg?size=256" />
+<meta name="googlebot" content="noindex, nofollow"><meta name="bingbot" content="noindex, nofollow"><meta name="slurp" content="noindex, nofollow"><meta name="duckduckbot" content="noindex, nofollow"><meta name="baiduspider" content="noindex, nofollow"><meta name="yandexbot" content="noindex, nofollow"><meta name="naver" content="noindex, nofollow"><meta name="facebookexternalhit" content="index, follow"><meta name="twitterbot" content="index, follow"><link rel="canonical" href="https://discord.com/invite/FNUnBY5N9J"/>
+<link rel="stylesheet" href="/assets/0.d010c02563aba2191104.css" integrity="sha256-2RYOG2j+xto76N613z2qw+g/6xUQHXbIwrnEtt7Hq78= sha512-3Dc7T95124AO82t65mFhXk9TDgjeVyUvkqAoRzuCfGq1zcetoIORQoBjrXLUZtsc0MNA/EcPiJ4MDJQOtxCnfA=="><link rel="icon" href="/assets/07dca80a102d4149e9736d4b162cff6f.ico" /><title>balsnctf</title>  </head>
+
+  <body>
+    <div id="app-mount"></div><script nonce="MTE5LDE1OCwxNCwyMDYsMTcwLDQ5LDEyNywxMTU=">window.__OVERLAY__ = /overlay/.test(location.pathname)</script><script nonce="MTE5LDE1OCwxNCwyMDYsMTcwLDQ5LDEyNywxMTU=">window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)</script><script nonce="MTE5LDE1OCwxNCwyMDYsMTcwLDQ5LDEyNywxMTU=">window.GLOBAL_ENV = {
+        API_ENDPOINT: '//discord.com/api',
+        WEBAPP_ENDPOINT: '//discord.com',
+        CDN_HOST: 'cdn.discordapp.com',
+        ASSET_ENDPOINT: 'https://discord.com',
+        MEDIA_PROXY_ENDPOINT: 'https://media.discordapp.net',
+        WIDGET_ENDPOINT: '//discord.com/widget',
+        INVITE_HOST: 'discord.gg',
+        GUILD_TEMPLATE_HOST: 'discord.new',
+        GIFT_CODE_HOST: 'discord.gift',
+        RELEASE_CHANNEL: 'stable',
+        MARKETING_ENDPOINT: '//discord.com',
+        BRAINTREE_KEY: 'production_5st77rrc_49pp2rp4phym7387',
+        STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
+        NETWORKING_ENDPOINT: '//router.discordapp.net',
+        RTC_LATENCY_ENDPOINT: '//latency.discord.media/rtc',
+        PROJECT_ENV: 'production',
+        REMOTE_AUTH_ENDPOINT: '//remote-auth-gateway.discord.gg',
+        SENTRY_TAGS: {"buildId":"29091ef","buildType":"normal"},
+        MIGRATION_SOURCE_ORIGIN: 'https://discordapp.com',
+        MIGRATION_DESTINATION_ORIGIN: 'https://discord.com',
+        HTML_TIMESTAMP: Date.now(),
+        ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
+      };</script><script nonce="MTE5LDE1OCwxNCwyMDYsMTcwLDQ5LDEyNywxMTU=">!function(){if(null!=window.WebSocket){var n=function(n){try{var e=localStorage.getItem(n);return null==e?null:JSON.parse(e)}catch(n){return null}},e=n("token"),o=n("gatewayURL");if(e&&o&&!window.__OVERLAY__){var r=null!=window.DiscordNative||null!=window.require?"etf":"json",t=o+"/?encoding="+r+"&v=8&compress=zlib-stream";console.log("[FAST CONNECT] "+t+", encoding: "+r+", version: 8");var a=new WebSocket(t);a.binaryType="arraybuffer";var s=Date.now(),i={open:!1,gateway:t,messages:[]};a.onopen=function(){console.log("[FAST CONNECT] connected in "+(Date.now()-s)+"ms"),i.open=!0},a.onclose=a.onerror=function(){window._ws=null},a.onmessage=function(n){i.messages.push(n)},window._ws={ws:a,state:i}}}}();</script><script src="/assets/a7b6d203c88486597281.js" integrity="sha256-s4wT3sZd2Bxjq4GAdzVDt7HHsM27XfV3Ouy0+3qJrtQ= sha512-PxYh+jO+DELshcjiXN9ZWntQfGpv2ASVVhzt718mzOHxczG5myqex68hdhHJvLULO+GdhUcnb69pL8E6zl6iXQ=="></script><script src="/assets/66bf9f2da019f6a7063e.js" integrity="sha256-vGBFzJ6LRLjcaakTdXIQKFpbpZsWq+k5SnS0adFUJuI= sha512-AUzaRJjio4EpEGQzmLeW0FXFQW1419M3Sd2dYIwK0LepyBhvjDKLqGuBwzqaNg3DtonW4idC8WpeThT5JgtF+g=="></script><script src="/assets/05b906f38a8bd16f6e11.js" integrity="sha256-eJmpUkrwllA0qkh9RFu0tRLW0YuOolXYYMqU4tOlyqA= sha512-rNr27OOu4bs6fA6awtt2YDE0e6ZXAzC43H4bAz1STC0v5mAvb0JAUPjYH2uLS6F9/0yaK9JmqzN8pAXCMQ8rsw=="></script><script src="/assets/57d1a76bfdd6bd6fe45b.js" integrity="sha256-WOtZkiglBi9sKxu4iFpsVMKwpdw/rT1tqfqVro6cAl4= sha512-QQx25PVux7zR655RsIDn20xCm1krwnC7DC8hFQD4yPnJJ313vq9vm/H+7dtFTe9oe9hgP8Q0mKncpWYSujLO4A=="></script>  </body>
+</html>

@@ -1,4 +1,5 @@
 .gdb_history
 __pycache__
 .DS_Store
+diskimage
 *.sage.py
